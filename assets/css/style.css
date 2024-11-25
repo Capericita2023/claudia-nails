@@ -9,6 +9,10 @@
 .carousel ol {
     list-style-type: none;
 }
+.carousel-caption {
+    color: black;
+    font-size: x-large;
+}
 
 /*****************
     Nav-Bar
