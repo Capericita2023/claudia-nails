@@ -39,6 +39,10 @@
 .carousel-caption {
     color: black;
     font-size: x-large;
+    font-weight: 500 !important;
+}
+.carousel-caption .text-white{
+    font-size: xx-large;
 }
 
 /*****************
