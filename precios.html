@@ -11,18 +11,34 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/module/spinner/spinner.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
+    <div class="window-notice">
+        <div class="content">
+            <div id="js-preloader" class="js-preloader">
+                <div class="preloader-inner">
+                    <span class="dot"></span>
+                    <div class="dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="text">Cargando</div>
+        </div>
+    </div>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <nav class="navbar navbar-expand-sm navbar-light bg-main">
             <div class="container">
                 <a class="navbar-brand" href="index.html">CN</a>
-                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler d-lg-none text-white" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="bi bi-list"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
                     <ul class="navbar-nav navbar">
@@ -65,7 +81,7 @@
         </div>
 
     </main>
-    <footer class="text-lg-start">
+    <footer class="text-lg-start bg-main">
         <!-- Grid container -->
         <div class="container p-4">
             <!--Grid row-->
@@ -88,35 +104,34 @@
                         <!-- Facebook -->
                         <a type="button" class="btn btn-floating btn-light btn-lg"><i class="bi bi-facebook"></i></a>
                         <!-- Twitter -->
-                        <a type="button" class="btn btn-floating btn-light btn-lg"><i class="bi bi-twitter-x"></i></a>
+                        <a type="button" class="btn btn-floating btn-light btn-lg"><i class="bi bi-instagram"></i></a>
                         <!-- Google + -->
-                        <a type="button" class="btn btn-floating btn-light btn-lg"><i class="bi bi-google"></i></a>
+                        <a type="button" class="btn btn-floating btn-light btn-lg"><i class="bi bi-whatsapp"></i></a>
                         <!-- Linkedin -->
                     </div>
                 </div>
                 <!--Grid column-->
 
                 <!--Grid column-->
+                
                 <div class="col-lg-4 col-md-6 mb-4 mb-md-0 mt-2">
-                    <h5 class="text-uppercase mb-4 pb-1">Contact Info</h5>
+                    <h5 class="text-uppercase mb-4 pb-1">Información de Contacto</h5>
 
                     <!-- <div class="form-outline form-white mb-4">
-                                    <input type="text" id="formControlLg" class="form-control form-control-lg" />
-                                    <label class="form-label" for="formControlLg">Search</label>
-                                </div> -->
+                                <input type="text" id="formControlLg" class="form-control form-control-lg" />
+                                <label class="form-label" for="formControlLg">Search</label>
+                            </div> -->
 
                     <ul class="fa-ul" style="margin-left: 1.65em;">
                         <li class="mb-3">
-                            <span class="fa-li"><i class="bi bi-house"></i></span><span class="ms-2">Warsaw,
-                                00-967, Poland</span>
+                            <span class="fa-li"><i class="bi bi-house"></i></span><span class="ms-2">45 201</span>
                         </li>
                         <li class="mb-3">
                             <span class="fa-li"><i class="bi bi-envelope"></i></span><span
-                                class="ms-2">contact@example.com</span>
+                                class="ms-2">ivonnetclaudia@gmail.com</span>
                         </li>
                         <li class="mb-3">
-                            <span class="fa-li"><i class="bi bi-phone"></i></span><span class="ms-2">+ 48 234
-                                567 88</span>
+                            <span class="fa-li"><i class="bi bi-phone"></i></span><span class="ms-2">+ 53 51130037</span>
                         </li>
                     </ul>
                 </div>
@@ -163,6 +178,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
+    <script src="assets/module/spinner/spinner.js"></script>
 </body>
 
 </html>

@@ -1,3 +1,30 @@
+/***********************
+    GLOBAL VARS
+************************/
+:root{
+    --main-color: rgb(240, 151, 206);
+    --link-color: rgb(255, 255, 255);
+    --nav-text-color: white;
+}
+.bg-main{
+    background-color: var(--main-color);
+    color: white;
+}
+.navbar-brand {
+    color: var(--nav-text-color) !important;
+    font-weight: bolder;
+}
+.navbar-nav {
+    --bs-nav-link-color: var(--link-color) !important;
+}
+.navbar {
+    --bs-navbar-active-color: var(--nav-text-color) !important;
+    --bs-nav-link-hover-color: var(--link-color);
+}
+.active, .nav-item:hover {
+    border-bottom: 1px solid white;
+    font-weight: bolder;
+}
 /***************
     Carousel
 ****************/
@@ -22,7 +49,6 @@
         width: 100%;
     }
 }
-
 /**********************
     FOOTER
 ***********************/
@@ -38,7 +64,6 @@ footer h5{
 ***********************/
 .category{
     height: 15vh;
-    background-image: url('data:image/jpeg;base64,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');
     background-size: cover;
     background-color: rgba(8, 8, 8, 0.432);
     background-blend-mode: darken;
@@ -47,7 +72,6 @@ footer h5{
 }
 .card-body{
     margin: 0%;
-    padding-top: 8.5%;
 }
 .card-title{
     margin-top: 0%;
@@ -55,5 +79,41 @@ footer h5{
 .category:hover{
     cursor: pointer;
     background-color: rgba(8, 8, 8, 0.8);
-    border: 2px solid rgb(223, 86, 109);
+    border: 1px solid rgb(223, 86, 109);
+}
+.category1{
+    background-image: url('../img/catalogo/Uñas naturales con gel semipermanente/8af18e49a257d20e5fb65515a9892f10.jpg');
+}
+.category2{
+    background-image: url('../img/catalogo/Con cintas/fcfdba8dcfa1c5bd411b1c210ae1a5f9.jpg');
+}
+.category3{
+    background-image: url('../img/catalogo/Dibujos con gel semipermanente/u21-3.jpg');
+}
+.category4{
+    background-image: url('../img/catalogo/Efecto aurora/inni-producenci-proszki-do-paznokci-allepaznokcie-glamour-effect-glamour-effect_side2.webp');
+}
+.category5{
+    background-image: url('');
+}
+.category6{
+    background-image: url('');
+}
+.category7{
+    background-image: url('');
+}
+.category8{
+    background-image: url('');
+}
+.category9{
+    background-image: url('');
+}
+.category10{
+    background-image: url('');
+}
+.category11{
+    background-image: url('');
+}
+.category12{
+    background-image: url('');
 }
