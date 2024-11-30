@@ -48,9 +48,20 @@
 /*****************
     Nav-Bar
 ****************/
-@media (max-width: 440px) {
+@media (max-width: 600px) {
     .navbar-nav {
         width: 100%;
+    }
+    .navbar-brand{
+        width: 50%;
+    }
+    .navbar-brand img{
+        width: 20% !important;
+    }
+}
+@media (max-width: 375px) {
+    .navbar-brand img{
+        width: 30% !important;
     }
 }
 .navbar-brand img{
@@ -68,6 +79,9 @@ footer h5{
 /**********************
     SOCIAL-ICONS
 **********************/
+.instagram,.facebook,.whatsapp,.telegram{
+    font-size: 28px;
+}
 .instagram:hover{
     background: linear-gradient(20deg,#FDCB58, #F77737, #D62976, #A56DB8, #4B69E3) !important;
     color: white !important;
@@ -78,6 +92,10 @@ footer h5{
 }
 .whatsapp:hover{
     background-color: #72d70f;
+    color: white;
+}
+.telegram:hover{
+    background-color: #6383ec;
     color: white;
 }
 /***************
