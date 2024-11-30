@@ -87,37 +87,63 @@ footer h5{
 }
 .category1{
     background-image: url('../img/catalogo/Uñas naturales con gel semipermanente/8af18e49a257d20e5fb65515a9892f10.jpg');
+    background-position: 10%;
 }
 .category2{
     background-image: url('../img/catalogo/Con cintas/fcfdba8dcfa1c5bd411b1c210ae1a5f9.jpg');
+    background-position: 10%;
 }
 .category3{
     background-image: url('../img/catalogo/Dibujos con gel semipermanente/u21-3.jpg');
+    background-position: 10%;
 }
 .category4{
     background-image: url('../img/catalogo/Efecto aurora/inni-producenci-proszki-do-paznokci-allepaznokcie-glamour-effect-glamour-effect_side2.webp');
 }
 .category5{
-    background-image: url('');
+    background-image: url('../img/catalogo/Efecto espejo/uñas-efecto-espejo-plata.jpg');
+    background-position: 10%;
 }
 .category6{
-    background-image: url('');
+    background-image: url('../img/catalogo/Efecto marmol/9261d68bff52fa63f436508eace01a66.jpg');
+    background-position: 10%;
 }
 .category7{
-    background-image: url('');
+    background-image: url('../img/catalogo/galaxy/70811806205759c7ffd923553ee29764.png');
+    background-position: 10%;
 }
 .category8{
-    background-image: url('');
+    background-image: url('../img/catalogo/Encapsuladas/maxresdefault.jpg');
+    background-position: 5%;
 }
 .category9{
-    background-image: url('');
+    background-image: url('../img/catalogo/Forma de las uñas/59c8d43a6a14b3dda14b31bcb528cb1d.jpg');
+    background-position: 10%;
 }
 .category10{
-    background-image: url('');
+    background-image: url('../img/catalogo/Gemas 3d/0b00ba146b9ea33c2be8e283298023b6.jpg');
+    background-position: 10%;
 }
 .category11{
-    background-image: url('');
+    background-image: url('../img/catalogo/Mate/unhas-madrinha-casamento-62.jpg');
+    background-position: 10%;
 }
 .category12{
-    background-image: url('');
+    background-image: url('../img/catalogo/Relieve de flores/OIP.jfif');
+    background-position: 10%;
+}
+/**********************
+    SOCIAL-ICONS
+**********************/
+.instagram:hover{
+    background: linear-gradient(20deg,#FDCB58, #F77737, #D62976, #A56DB8, #4B69E3) !important;
+    color: white !important;
+}
+.facebook:hover{
+    background-color: #4B69E3;
+    color: white;
+}
+.whatsapp:hover{
+    background-color: #72d70f;
+    color: white;
 }
