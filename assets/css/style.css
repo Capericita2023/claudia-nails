@@ -32,7 +32,12 @@
     width: 100% !important;
     height: 80vh;
 }
-
+@media (max-width: 440px) {
+    .carousel-item img{
+        size-adjust: inherit;
+        height: 500px;
+    }
+}
 .carousel ol {
     list-style-type: none;
 }
