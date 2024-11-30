@@ -86,6 +86,7 @@ footer h5{
 **********************/
 .instagram,.facebook,.whatsapp,.telegram{
     font-size: 28px;
+    margin-right: 5%;
 }
 .instagram:hover{
     background: linear-gradient(20deg,#FDCB58, #F77737, #D62976, #A56DB8, #4B69E3) !important;
@@ -102,6 +103,21 @@ footer h5{
 .telegram:hover{
     background-color: #6383ec;
     color: white;
+}
+/****************
+    CONTACT-INFO
+*****************/
+.contact-info li a{
+    font-size: 28px;
+}
+.contact-info{
+    list-style-type: none;
+    padding-left: 18%;
+}
+@media (max-width: 440px) {
+    .contact-info{
+        padding-left: 0%;
+    }
 }
 /***************
     OTHER
