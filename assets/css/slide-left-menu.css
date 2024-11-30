@@ -84,3 +84,8 @@ main {
 .info-section::-webkit-scrollbar-thumb:hover {
     background: rgba(0, 0, 0, 0.8); /* Color al pasar el mouse */
 }
+@media (max-width: 440px) {
+    .catalogo-menu{
+        max-height: 750px;
+    }
+}
