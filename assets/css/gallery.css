@@ -1,0 +1,90 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* Espacio entre las imágenes */
+    justify-content: left;
+    /* Centra las imágenes */
+    margin-top: 2% !important;
+}
+
+.gallery img {
+    width: 150px;
+    /* Ancho de las imágenes */
+    height: auto;
+    /* Mantiene la proporción */
+    height: 150px;
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre la imagen */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    transition: transform 0.2s;
+    /* Efecto de escala al pasar el ratón */
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    /* Efecto de aumento al pasar el ratón */
+}
+
+/* Estilo para la ventana emergente */
+.modal {
+    display: none;
+    /* Oculta la ventana emergente por defecto */
+    position: fixed;
+    /* Posiciona la ventana emergente */
+    z-index: 1000;
+    /* Asegura que esté encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Fondo oscuro con opacidad */
+    justify-content: center;
+    /* Centra el contenido */
+    align-items: center;
+    /* Centra el contenido */
+}
+
+.modal img {
+    max-width: 90%;
+    /* Limita el tamaño de la imagen en la ventana emergente */
+    max-height: 90%;
+    /* Limita la altura de la imagen en la ventana emergente */
+    border-radius: 5px;
+    /* Bordes redondeados */
+}
+
+.close {
+    position: absolute;
+    /* Posiciona el botón de cerrar */
+    top: 20px;
+    right: 30px;
+    color: white;
+    /* Color del texto del botón */
+    font-size: 30px;
+    /* Tamaño del texto */
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre el botón */
+}
+
+.gallery-section {
+    display: none;
+    margin-top: 2%;
+    margin-left: 10%;
+}
+
+.gallery-section h3 {
+    text-align: center;
+}
+
+#naturales {
+    display: block;
+}
+
+@media (max-width: 440px) {
+    .gallery-section h3 {
+        margin-top: 15% !important;
+    }
+}

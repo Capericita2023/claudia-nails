@@ -53,6 +53,9 @@
         width: 100%;
     }
 }
+.navbar-brand img{
+    width: 15%;
+}
 /**********************
     FOOTER
 ***********************/
@@ -61,76 +64,6 @@ footer p{
 }
 footer h5{
     text-align: center !important;
-}
-
-/***********************
-    Catálogo
-***********************/
-.category{
-    height: 15vh;
-    background-size: cover;
-    background-color: rgba(8, 8, 8, 0.432);
-    background-blend-mode: darken;
-    color: white;
-    text-align: center;
-}
-.card-body{
-    margin: 0%;
-}
-.card-title{
-    margin-top: 0%;
-}
-.category:hover{
-    cursor: pointer;
-    background-color: rgba(8, 8, 8, 0.8);
-    border: 1px solid rgb(223, 86, 109);
-}
-.category1{
-    background-image: url('../img/catalogo/Uñas naturales con gel semipermanente/8af18e49a257d20e5fb65515a9892f10.jpg');
-    background-position: 10%;
-}
-.category2{
-    background-image: url('../img/catalogo/Con cintas/fcfdba8dcfa1c5bd411b1c210ae1a5f9.jpg');
-    background-position: 10%;
-}
-.category3{
-    background-image: url('../img/catalogo/Dibujos con gel semipermanente/u21-3.jpg');
-    background-position: 10%;
-}
-.category4{
-    background-image: url('../img/catalogo/Efecto aurora/inni-producenci-proszki-do-paznokci-allepaznokcie-glamour-effect-glamour-effect_side2.webp');
-}
-.category5{
-    background-image: url('../img/catalogo/Efecto espejo/uñas-efecto-espejo-plata.jpg');
-    background-position: 10%;
-}
-.category6{
-    background-image: url('../img/catalogo/Efecto marmol/9261d68bff52fa63f436508eace01a66.jpg');
-    background-position: 10%;
-}
-.category7{
-    background-image: url('../img/catalogo/galaxy/70811806205759c7ffd923553ee29764.png');
-    background-position: 10%;
-}
-.category8{
-    background-image: url('../img/catalogo/Encapsuladas/maxresdefault.jpg');
-    background-position: 5%;
-}
-.category9{
-    background-image: url('../img/catalogo/Forma de las uñas/59c8d43a6a14b3dda14b31bcb528cb1d.jpg');
-    background-position: 10%;
-}
-.category10{
-    background-image: url('../img/catalogo/Gemas 3d/0b00ba146b9ea33c2be8e283298023b6.jpg');
-    background-position: 10%;
-}
-.category11{
-    background-image: url('../img/catalogo/Mate/unhas-madrinha-casamento-62.jpg');
-    background-position: 10%;
-}
-.category12{
-    background-image: url('../img/catalogo/Relieve de flores/OIP.jfif');
-    background-position: 10%;
 }
 /**********************
     SOCIAL-ICONS
@@ -146,4 +79,14 @@ footer h5{
 .whatsapp:hover{
     background-color: #72d70f;
     color: white;
+}
+/***************
+    OTHER
+****************/
+.pfx{
+    position: fixed;
+}
+.map{
+    text-decoration: none;
+    color: var(--nav-text-color);
 }

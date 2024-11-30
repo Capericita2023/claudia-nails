@@ -2,16 +2,17 @@
 <html lang="en">
 
 <head>
-    <title>CN | Catálogo</title>
+    <title>LUXE NAILS | Catálogo</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
+    <link rel="shortcut icon" href="assets/img/icono-LD.png" type="image/x-icon">
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/script.js"></script>
+    <link rel="stylesheet" href="assets/css/gallery.css">
+    <link rel="stylesheet" href="assets/css/slide-left-menu.css">
     <link rel="stylesheet" href="assets/module/spinner/spinner.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
@@ -35,7 +36,9 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-light bg-main">
             <div class="container">
-                <a class="navbar-brand" href="index.html">CN</a>
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/logo-LD.png">
+                </a>
                 <button class="navbar-toggler d-lg-none text-white" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -61,124 +64,399 @@
         </nav>
     </header>
     <main>
-
-        <div class="container mt-2">
-            <div class="row justify-content-between align-items-center">
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mt-2">
-                    <div class="card category category1">
-                        <div class="card-body">
-                            <h4 class="card-title">Uñas Naturales con Gel Semipermanente</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mt-2">
-                    <div class="card category category2">
-                        <div class="card-body">
-                            <h4 class="card-title">Con Cintas</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mt-2">
-                    <div class="card category category3">
-                        <div class="card-body">
-                            <h4 class="card-title">Dibujos con Gel Semipermanente</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mt-2">
-                    <div class="card category category4">
-                        <div class="card-body">
-                            <h4 class="card-title">Efecto Aurora</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mt-2">
-                    <div class="card category category5">
-                        <div class="card-body">
-                            <h4 class="card-title">Efecto Espejo</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mt-2">
-                    <div class="card category category6">
-                        <div class="card-body">
-                            <h4 class="card-title">Efecto Marmol</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mt-2">
-                    <div class="card category category7">
-                        <div class="card-body">
-                            <h4 class="card-title">Efecto Galaxy</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mt-2">
-                    <div class="card category category8">
-                        <div class="card-body">
-                            <h4 class="card-title">Encapsuladas</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mt-2">
-                    <div class="card category category9">
-                        <div class="card-body">
-                            <h4 class="card-title">Forma de las Uñas</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mt-2">
-                    <div class="card category category10">
-                        <div class="card-body">
-                            <h4 class="card-title">Gemas 3D</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mt-2">
-                    <div class="card category category11">
-                        <div class="card-body">
-                            <h4 class="card-title">Mate</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mt-2">
-                    <div class="card category category12">
-                        <div class="card-body">
-                            <h4 class="card-title">Relieve de Flores</h4>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
+            aria-labelledby="offcanvasWithBackdropLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Categorías</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="sidebar">
+                    <div class="catalogo-menu">
+                        <div class="images">
+                            <!-- Imágenes del carrusel -->
+                            <div class="image-item" onclick="ShowGallery('naturales')" data-bs-dismiss="offcanvas">
+                                <img src="assets/img/catalogo/Uñas naturales con gel semipermanente/8af18e49a257d20e5fb65515a9892f10.jpg"
+                                    alt="Imagen 1">
+                                <div class="image-text">Uñas con gel semipermanente</div>
+                            </div>
+                            <div class="image-item" onclick="ShowGallery('cinta')" data-bs-dismiss="offcanvas">
+                                <img src="assets/img/catalogo/Con cintas/fcfdba8dcfa1c5bd411b1c210ae1a5f9.jpg"
+                                    alt="Imagen 2">
+                                <div class="image-text">Uñas Decoradas con Cinta</div>
+                            </div>
+                            <div class="image-item" onclick="ShowGallery('dibujo')" data-bs-dismiss="offcanvas">
+                                <img src="assets/img/catalogo/Dibujos con gel semipermanente/u21-3.jpg" alt="Imagen 3">
+                                <div class="image-text">Dibujos con gel semipermanente</div>
+                            </div>
+                            <div class="image-item" onclick="ShowGallery('aurora')" data-bs-dismiss="offcanvas">
+                                <img src="assets/img/catalogo/Efecto aurora/inni-producenci-proszki-do-paznokci-allepaznokcie-glamour-effect-glamour-effect_side2.webp"
+                                    alt="Imagen 4">
+                                <div class="image-text">Uñas con Efecto Aurora</div>
+                            </div>
+                            <div class="image-item" onclick="ShowGallery('espejo')" data-bs-dismiss="offcanvas">
+                                <img src="assets/img/catalogo/Efecto espejo/uñas-efecto-espejo-plata.jpg"
+                                    alt="Imagen 5">
+                                <div class="image-text">Uñas con Efecto Espejo</div>
+                            </div>
+                            <div class="image-item" onclick="ShowGallery('marmol')" data-bs-dismiss="offcanvas">
+                                <img src="assets/img/catalogo/Efecto marmol/9261d68bff52fa63f436508eace01a66.jpg"
+                                    alt="Imagen 6">
+                                <div class="image-text">Uñas con Efecto Marmol</div>
+                            </div>
+                            <div class="image-item" onclick="ShowGallery('galaxy')" data-bs-dismiss="offcanvas">
+                                <img src="assets/img/catalogo/galaxy/70811806205759c7ffd923553ee29764.png"
+                                    alt="Imagen 7">
+                                <div class="image-text">Uñas con Efecto Galaxy</div>
+                            </div>
+                            <div class="image-item" onclick="ShowGallery('encapsulada')" data-bs-dismiss="offcanvas">
+                                <img src="assets/img/catalogo/Encapsuladas/maxresdefault.jpg" alt="Imagen 8">
+                                <div class="image-text">Uñas Encapsuladas</div>
+                            </div>
+                            <div class="image-item" onclick="ShowGallery('formas')" data-bs-dismiss="offcanvas">
+                                <img src="assets/img/catalogo/Forma de las uñas/59c8d43a6a14b3dda14b31bcb528cb1d.jpg"
+                                    alt="Imagen 9">
+                                <div class="image-text">Forma de las Uñas</div>
+                            </div>
+                            <div class="image-item" onclick="ShowGallery('3d')" data-bs-dismiss="offcanvas">
+                                <img src="assets/img/catalogo/Gemas 3d/0b00ba146b9ea33c2be8e283298023b6.jpg"
+                                    alt="Imagen 10">
+                                <div class="image-text">Uñas con Gemas 3D</div>
+                            </div>
+                            <div class="image-item" onclick="ShowGallery('mate')" data-bs-dismiss="offcanvas">
+                                <img src="assets/img/catalogo/Mate/unhas-madrinha-casamento-62.jpg" alt="Imagen 11">
+                                <div class="image-text">Uñas con Mate</div>
+                            </div>
+                            <div class="image-item" onclick="ShowGallery('relieve')" data-bs-dismiss="offcanvas">
+                                <img src="assets/img/catalogo/Relieve de flores/OIP.jfif" alt="Imagen 12">
+                                <div class="image-text">Uñas con Relieve de Flores</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
-
+        <div class="info-section">
+            <button class="btn bg-main pfx" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop"><i
+                    class="bi bi-list"></i></button>
+            <div id="naturales" class="gallery-section">
+                <h3>Uñas con gel semipermanente</h3>
+                <div class="gallery">
+                    <img src="assets/img/catalogo/Uñas naturales con gel semipermanente/8af18e49a257d20e5fb65515a9892f10.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Uñas naturales con gel semipermanente/083549b53aba85ead2ad9591affc6658.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Uñas naturales con gel semipermanente/21523822421668f58ff77a568c1df47c.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Uñas naturales con gel semipermanente/a5ea6980a7bb9ff0c10e36d42ebe66a4.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Uñas naturales con gel semipermanente/b3efba8148be57bd8da31f5d0ae13de1.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Uñas naturales con gel semipermanente/D_NQ_NP_840043-MLM42778351887_072020-F.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Uñas naturales con gel semipermanente/f919b0fedeb631b0e18ba83bb4c153ec.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Uñas naturales con gel semipermanente/fc201c0013d1cb4a6269762874e89116.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Uñas naturales con gel semipermanente/OIP (1).jfif"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Uñas naturales con gel semipermanente/OIP (2).jfif"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Uñas naturales con gel semipermanente/OIP (3).jfif"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Uñas naturales con gel semipermanente/OIP (4).jfif"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Uñas naturales con gel semipermanente/OIP (5).jfif"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Uñas naturales con gel semipermanente/OIP (6).jfif"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Uñas naturales con gel semipermanente/OIP (8).jfif"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Uñas naturales con gel semipermanente/OIP (9).jfif"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Uñas naturales con gel semipermanente/OIP (10).jfif"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Uñas naturales con gel semipermanente/OIP (11).jfif"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Uñas naturales con gel semipermanente/OIP.jfif"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Uñas naturales con gel semipermanente/pastel-colors-spring-break-nail-art.webp"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Uñas naturales con gel semipermanente/R.jfif"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Uñas naturales con gel semipermanente/R (1).jfif"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Uñas naturales con gel semipermanente/R (2).jfif"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Uñas naturales con gel semipermanente/R (3).jfif"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Uñas naturales con gel semipermanente/R (4).jfif"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Uñas naturales con gel semipermanente/R (5).jfif"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Uñas naturales con gel semipermanente/R (6).jfif"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Uñas naturales con gel semipermanente/R (7).jfif"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Uñas naturales con gel semipermanente/rosas.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Uñas naturales con gel semipermanente/uñas-color-amarillo-con-flores.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Uñas naturales con gel semipermanente/uñas-sencillas-verdes-con-puntos-dorados.jpg"
+                        onclick="openModal(this.src)">
+                </div>
+            </div>
+            <div id="cinta" class="gallery-section">
+                <h3>Uñas Decoradas con Cinta</h3>
+                <div class="gallery">
+                    <img src="assets/img/catalogo/Con cintas/1cd69f9404d024cb278fba4987f284fd.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Con cintas/93cbdb02fc12002a351e42dae89d21b0.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Con cintas/a5f10a020a264e89bac4e986fd330eb2.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Con cintas/fcfdba8dcfa1c5bd411b1c210ae1a5f9.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Con cintas/OIP (7).jfif" onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Con cintas/OIP.jfif" onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Con cintas/R.jfif" onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Con cintas/unas-decoradas-con-cintas.jpg"
+                        onclick="openModal(this.src)">
+                </div>
+            </div>
+            <div id="dibujo" class="gallery-section">
+                <h3>Dibujos con gel semipermanente</h3>
+                <div class="gallery">
+                    <img src="assets/img/catalogo/Dibujos con gel semipermanente/OIP (1).jfif"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Dibujos con gel semipermanente/OIP (2).jfif"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Dibujos con gel semipermanente/OIP.jfif"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Dibujos con gel semipermanente/PICT3327.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Dibujos con gel semipermanente/Pig-Nails-for-Clear-Nails.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Dibujos con gel semipermanente/R (1).jfif"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Dibujos con gel semipermanente/R (8).jfif"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Dibujos con gel semipermanente/R.jfif" onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Dibujos con gel semipermanente/u21-3.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Dibujos con gel semipermanente/unas-de-gel_68c6deee_1080x1350.jpg"
+                        onclick="openModal(this.src)">
+                </div>
+            </div>
+            <div id="aurora" class="gallery-section">
+                <h3>Uñas con Efecto Aurora</h3>
+                <div class="gallery">
+                    <img src="assets/img/catalogo/Efecto aurora/c81484747140a01a42d9c6a29068cc25.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Efecto aurora/cc7bdce3ec53499d8ccca4fad4ebcad6.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Efecto aurora/inni-producenci-proszki-do-paznokci-allepaznokcie-glamour-effect-glamour-effect_side2.webp"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Efecto aurora/OIP (1).jfif" onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Efecto aurora/OIP.jfif" onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Efecto aurora/R.jfif" onclick="openModal(this.src)">
+                </div>
+            </div>
+            <div id="espejo" class="gallery-section">
+                <h3>Uñas con Efecto Espejo</h3>
+                <div class="gallery">
+                    <img src="assets/img/catalogo/Efecto espejo/barniz-negro-y-burdeos-mate-morado-y-efecto-espejo-de-unas-_-bronce-metalico-oro-rosa_.jpeg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Efecto espejo/e4c1daa83117fdb58b6fb122376cf5fb.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Efecto espejo/OIP.jfif" onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Efecto espejo/R (1).jfif" onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Efecto espejo/R (2).jfif" onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Efecto espejo/R.jfif" onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Efecto espejo/uñas-efecto-espejo-plata.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Efecto espejo/uñas-efecto-espejo-rose-gold-e1574100968626.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Efecto espejo/uñas-plateadas-efecto-espejo-con-negro.jpg"
+                        onclick="openModal(this.src)">
+                </div>
+            </div>
+            <div id="marmol" class="gallery-section">
+                <h3>Uñas con Efecto Marmol</h3>
+                <div class="gallery">
+                    <img src="assets/img/catalogo/Efecto marmol/9261d68bff52fa63f436508eace01a66.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Efecto marmol/efecto marmol.webp" onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Efecto marmol/marble-nails.webp" onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Efecto marmol/OIP (1).jfif" onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Efecto marmol/OIP (2).jfif" onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Efecto marmol/OIP.jfif" onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Efecto marmol/Unas-estilo-marmol-13.webp"
+                        onclick="openModal(this.src)">
+                </div>
+            </div>
+            <div id="galaxy" class="gallery-section">
+                <h3>Uñas con Efecto Galaxy</h3>
+                <div class="gallery">
+                    <img src="assets/img/catalogo/galaxy/70811806205759c7ffd923553ee29764.png"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/galaxy/e21d97c1e693400c7c8143cdf45b8c5b.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/galaxy/ideas-galaxy-nails-purple-pink-square.webp"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/galaxy/OIP (1).jfif" onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/galaxy/OIP (2).jfif" onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/galaxy/OIP (3).jfif" onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/galaxy/OIP (4).jfif" onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/galaxy/OIP.jfif" onclick="openModal(this.src)">
+                </div>
+            </div>
+            <div id="encapsulada" class="gallery-section">
+                <h3>Encapsuladas</h3>
+                <div class="gallery">
+                    <img src="assets/img/catalogo/Encapsuladas/20b5d497e4f90465e14ec0b370903a14.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Encapsuladas/31a07c8ccd9cc59c85309ae2a6cfa8bb.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Encapsuladas/50-geniales-ideas-de-unas-encapsuladas-para-inspirarte.webp"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Encapsuladas/50289ac603d4aa24b75d5da7ecd24b3b.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Encapsuladas/58369bfb0910f7c4359ff7a9b54af96e.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Encapsuladas/82049bbe5f038c05e90896acbdc26fa6.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Encapsuladas/972f4235c719adf7126e6b2fa09d104a.png"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Encapsuladas/D_NQ_NP_776632-MLM44900947712_022021-F.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Encapsuladas/maxresdefault.jpg" onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Encapsuladas/OIP (1).jfif" onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Encapsuladas/OIP (2).jfif" onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Encapsuladas/OIP.jfif" onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Encapsuladas/R (1).jfif" onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Encapsuladas/R (2).jfif" onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Encapsuladas/R.jfif" onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Encapsuladas/sjRKqL7qEBB3rUAoLZkYF0PHd6Y.svg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Encapsuladas/unha-de-paty-4.jpg" onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Encapsuladas/unhas-encapsuladas19.jpg" onclick="openModal(this.src)">
+                </div>
+            </div>
+            <div id="formas" class="gallery-section">
+                <h3>Formas de las Uñas</h3>
+                <div class="gallery">
+                    <img src="assets/img/catalogo/Forma de las uñas/59c8d43a6a14b3dda14b31bcb528cb1d.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Forma de las uñas/IMG-20241130-WA0034.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Forma de las uñas/IMG-20241130-WA0035.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Forma de las uñas/IMG-20241130-WA0036.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Forma de las uñas/IMG-20241130-WA0037.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Forma de las uñas/IMG-20241130-WA0038.jpg"
+                        onclick="openModal(this.src)">
+                </div>
+            </div>
+            <div id="3d" class="gallery-section">
+                <h3>Uñas con Gemas 3D</h3>
+                <div class="gallery">
+                    <img src="assets/img/catalogo/Gemas 3d/072fe9ea8bdc11b872e6ff424215fbe0.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Gemas 3d/0b00ba146b9ea33c2be8e283298023b6.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Gemas 3d/18475df6863d2f615a5dd4bb508cd087.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Gemas 3d/402357fb4898f10d0ba40c1a12f7dc52.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Gemas 3d/54bc93adef1e2a9680c97a280a1f2f4b.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Gemas 3d/8ab844444ad523671ad03f805395a7dc.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Gemas 3d/b3a8a48143f1717c0508fab3549e40cc.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Gemas 3d/ca510b78dfbd9d2535da5414b7cb4f64.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Gemas 3d/decoracion-de-unas-con-piedras.webp"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Gemas 3d/EKCELWHCQVCJZKUXLEDQZF3CVI.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Gemas 3d/f3a342c9992145886dc924ae5020f73e.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Gemas 3d/uas-6ccebd4ec903bb87069643a3386e964f-0x1200.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Gemas 3d/OIP (1).jfif" onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Gemas 3d/OIP (2).jfif" onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Gemas 3d/OIP (3).jfif" onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Gemas 3d/OIP (4).jfif" onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Gemas 3d/OIP (5).jfif" onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Gemas 3d/OIP.jfif" onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Gemas 3d/R (1).jfif" onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Gemas 3d/R.jfif" onclick="openModal(this.src)">
+                </div>
+            </div>
+            <div id="mate" class="gallery-section">
+                <h3>Uñas con Mate</h3>
+                <div class="gallery">
+                    <img src="assets/img/catalogo/Mate/unhas-madrinha-casamento-62.jpg" onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Mate/OIP (1).jfif" onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Mate/OIP (2).jfif" onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Mate/OIP (3).jfif" onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Mate/OIP.jfif" onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Mate/R (1).jfif" onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Mate/R (2).jfif" onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Mate/R (3).jfif" onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Mate/R.jfif" onclick="openModal(this.src)">
+                </div>
+            </div>
+            <div id="relieve" class="gallery-section">
+                <h3>Uñas con Relieve de Flores</h3>
+                <div class="gallery">
+                    <img src="assets/img/catalogo/Relieve de flores/a1b67cee35d13060a5dbbc813d7054ac.jpg"
+                        onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Relieve de flores/OIP (3).jfif" onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Relieve de flores/OIP.jfif" onclick="openModal(this.src)">
+                    <img src="assets/img/catalogo/Relieve de flores/R.jfif" onclick="openModal(this.src)">
+                </div>
+            </div>
+        </div>
+        <!-- Ventana emergente -->
+        <div class="modal" id="modal" onclick="closeModal()">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-image" src="" alt="Imagen Ampliada">
+        </div>
     </main>
-    <footer class="text-lg-start mt-2  bg-main">
+    <footer class="text-lg-start bg-main">
         <!-- Grid container -->
         <div class="container p-4">
             <!--Grid row-->
             <div class="row mt-4">
                 <!--Grid column-->
                 <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
-                    <h5 class="text-uppercase mb-4">About company</h5>
+                    <h5 class="text-uppercase mb-4">Acerca de Nosotros</h5>
 
                     <p>
-                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-                        voluptatum deleniti atque corrupti.
+                        Nuestra razón de ser es satisfacer al cliente en calidad, atención y estética. Esperamos que nuestros servicios sean de tú agrado.
                     </p>
 
                     <p>
-                        Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
-                        molestias.
+                        Dicen que la felicidad no se puede comprar, pero puedes venir a vernos, pide tu cita en algunas de estas redes sociales.
                     </p>
 
                     <div class="mt-4 text-center">
                         <!-- Facebook -->
-                        <a type="button" class="btn btn-floating btn-light btn-lg facebook"><i class="bi bi-facebook"></i></a>
+                        <a type="button" class="btn btn-floating btn-light btn-lg facebook"><i
+                                class="bi bi-facebook"></i></a>
                         <!-- Twitter -->
-                        <a type="button" class="btn btn-floating btn-light btn-lg instagram"><i class="bi bi-instagram"></i></a>
+                        <a type="button" class="btn btn-floating btn-light btn-lg instagram"><i
+                                class="bi bi-instagram"></i></a>
                         <!-- Google + -->
-                        <a type="button" class="btn btn-floating btn-light btn-lg whatsapp" onclick="redirectToWhatsApp()"><i class="bi bi-whatsapp"></i></a>
+                        <a type="button" class="btn btn-floating btn-light btn-lg whatsapp"
+                            onclick="redirectToWhatsApp()"><i class="bi bi-whatsapp"></i></a>
                         <!-- Linkedin -->
                     </div>
                 </div>
@@ -195,14 +473,15 @@
 
                     <ul class="fa-ul" style="margin-left: 1.65em;">
                         <li class="mb-3">
-                            <span class="fa-li"><i class="bi bi-house"></i></span><span class="ms-2">45 201</span>
+                            <a class="btn btn-light" href="https://www.google.com/maps?q=22.9828435,-82.4651958" target="_blank" ><i class="bi bi-geo-alt"></i></a><span class="ms-2">45 201</span>
                         </li>
                         <li class="mb-3">
-                            <span class="fa-li"><i class="bi bi-envelope"></i></span><span
+                            <a class="btn btn-light" href="mailto:ivonnetclaudia@gmail.com?subject=Reservar%20Cita&body=Hola%20quisiera%20reservar%20una%20cita." target="_blank"><i class="bi bi-envelope"></i></a><span
                                 class="ms-2">ivonnetclaudia@gmail.com</span>
                         </li>
                         <li class="mb-3">
-                            <span class="fa-li"><i class="bi bi-phone"></i></span><span class="ms-2">+ 53 51130037</span>
+                            <a class="btn btn-light" href="tel:+5351130037"><i class="bi bi-phone"></i></a><span class="ms-2">+ 53
+                                51130037</span>
                         </li>
                     </ul>
                 </div>
@@ -250,6 +529,7 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
     <script src="assets/module/spinner/spinner.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

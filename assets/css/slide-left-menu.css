@@ -1,0 +1,86 @@
+main {
+    display: flex;
+    height: 80vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.sidebar {
+    width: 300px;
+    padding: 20px;
+}
+.catalogo-menu {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Permitir desplazamiento vertical */
+    max-height: 450px; /* Altura máxima para el carrusel */
+    scrollbar-width: thin; /* Para Firefox */
+    scrollbar-color: transparent transparent; /* Para Firefox */
+}
+.catalogo-menu::-webkit-scrollbar {
+    width: 8px; /* Ancho de la barra de desplazamiento */
+    background: transparent; /* Fondo de la barra de desplazamiento */
+}
+.catalogo-menu::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.5); /* Color de la barra de desplazamiento */
+    border-radius: 4px; /* Bordes redondeados */
+}
+.catalogo-menu::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.8); /* Color al pasar el mouse */
+}
+.images {
+    display: flex;
+    flex-direction: column;
+}
+.image-item {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3%;
+    height: 100px; /* Altura de cada imagen */
+    border-bottom: 1px solid #ddd; /* Separador entre imágenes */
+    overflow: hidden; /* Para ocultar el texto que sobresale */
+}
+.image-text {
+    position: absolute; /* Posiciona el texto sobre la imagen */
+    bottom: 0; /* Distancia desde la parte inferior */
+    left: 0; /* Centra horizontalmente */
+    right: 0;
+    top: 0;
+    text-align: center;
+    color: white; /* Color del texto */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    padding: 7%;
+    opacity: 0;
+    font-size: x-large;
+    border-radius: 10px; /* Bordes redondeados */
+}
+.image-text:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.image-item img {
+    width: 100%;
+    border-radius: 10px;
+    max-width: 100%;
+    max-height: 100%;
+}
+.info-section {
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco para la sección de información */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Permitir desplazamiento vertical */
+    scrollbar-width: thin; /* Para Firefox */
+    scrollbar-color: transparent transparent; /* Para Firefox */
+}
+.info-section::-webkit-scrollbar {
+    width: 8px; /* Ancho de la barra de desplazamiento */
+    background: transparent; /* Fondo de la barra de desplazamiento */
+}
+.info-section::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.5); /* Color de la barra de desplazamiento */
+    border-radius: 4px; /* Bordes redondeados */
+}
+.info-section::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.8); /* Color al pasar el mouse */
+}
