@@ -7,6 +7,7 @@
     --main-color: rgb(240, 151, 206);
     --link-color: rgb(255, 255, 255);
     --nav-text-color: white;
+    --constrast-main-color: #d469c2;
 }
 /* Estilos generales */
 body {
@@ -34,7 +35,7 @@ h1, h2, h3 {
     --bs-navbar-active-color: var(--nav-text-color) !important;
     --bs-nav-link-hover-color: var(--link-color);
 }
-.active, .nav-item:hover {
+.active, .navbar .nav-item:hover {
     border-bottom: 1px solid white;
     font-weight: bolder;
 }

@@ -83,8 +83,45 @@ main {
 .info-section::-webkit-scrollbar-thumb:hover {
     background: rgba(0, 0, 0, 0.8); /* Color al pasar el mouse */
 }
+.catalogo-menu-xs{
+    display: none;
+}
+.offcanvas.offcanvas-start{
+    width: auto !important;
+    background-color: var(--main-color);
+}
+.offcanvas-body{
+    padding: 0% !important;
+}
 @media (max-width: 440px) {
     .catalogo-menu{
-        max-height: 750px;
+        display: none;
     }
+    .catalogo-menu-xs{
+        display: block;
+    }
+}
+.catalogo-menu-xs .text-white:hover{
+    color: var(--link-color);
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.catalogo-menu-xs {
+    flex-direction: column;
+    overflow-y: auto; /* Permitir desplazamiento vertical */
+    max-height: 450px; /* Altura máxima para el carrusel */
+    scrollbar-width: thin; /* Para Firefox */
+    scrollbar-color: transparent transparent; /* Para Firefox */
+}
+.catalogo-menu-xs::-webkit-scrollbar {
+    width: 8px; /* Ancho de la barra de desplazamiento */
+    background: transparent; /* Fondo de la barra de desplazamiento */
+}
+.catalogo-menu-xs::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.5); /* Color de la barra de desplazamiento */
+    border-radius: 4px; /* Bordes redondeados */
+}
+.catalogo-menu-xs::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.8); /* Color al pasar el mouse */
 }
