@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;500;600&display=swap');
+
 /***********************
     GLOBAL VARS
 ************************/
@@ -6,9 +8,20 @@
     --link-color: rgb(255, 255, 255);
     --nav-text-color: white;
 }
+/* Estilos generales */
+body {
+    font-family: 'Montserrat', sans-serif; /* Tipografía para el cuerpo */
+}
+/* Estilos para encabezados */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif; /* Tipografía para encabezados */
+}
 .bg-main{
     background-color: var(--main-color);
     color: white;
+}
+.text-main{
+    color: var(--main-color);
 }
 .navbar-brand {
     color: var(--nav-text-color) !important;
