@@ -20,7 +20,17 @@ function closeModal() {
 function ShowGallery(id) {
     const divs = document.querySelectorAll('.gallery-section');
     divs.forEach(div => {
-        div.style.display = 'none'; 
+        div.style.display = 'none';
     });
     document.getElementById(id).style.display = 'block';
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+}
+
+function ShowPrice(id) {
+    const divs = document.querySelectorAll('.price-section');
+    divs.forEach(div => {
+        div.style.display = 'none';
+    });
+    document.getElementById(id).style.display = 'flex';
 }

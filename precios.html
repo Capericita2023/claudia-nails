@@ -64,7 +64,28 @@
     </header>
     <main>
         <div class="container mt-2">
-            <div class="row justify-content-center align-items-center">
+            <div id="price" class="price-section row justify-content-center align-items-center g-2 mt-2 mb-2">
+                <div class="col-xs-12 col-sm-6">
+                    <div class="card card-precio" onclick="ShowPrice('manicura')">
+                        <div class="card-body">
+                            <h4 class="card-title">Manicura</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <div class="card card-precio" onclick="ShowPrice('pedicura')">
+                        <div class="card-body">
+                            <h4 class="card-title">Pedicura</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="manicura" class="price-section row justify-content-center align-items-center mt-2 mb-2">
+                <div class="col-xs-12">
+                    <h2 class="text-bold"><a name="" id="" class="btn btn-default" onclick="ShowPrice('price')"
+                            role="button"><i class="btn-back text-main text-x-large"></i></a>
+                        Manicura</h2>
+                </div>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mt-2">
                     <div class="card mb-4 rounded-3 shadow-sm border-default">
                         <div class="card-header py-3 bg-default border-default">
@@ -92,7 +113,8 @@
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mt-2">
                     <div class="card mb-4 rounded-3 shadow-sm border-default">
                         <div class="card-header py-3 bg-default border-default">
-                            <h4 class="my-0 fw-normal"><i class="bi bi-star-fill text-main"></i> Arreglos con Polygel</h4>
+                            <h4 class="my-0 fw-normal"><i class="bi bi-star-fill text-main"></i> Arreglos con Polygel
+                            </h4>
                         </div>
                         <div class="card-body">
                             <ul class="list-unstyled mt-3 mb-4">
@@ -108,7 +130,8 @@
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mt-2">
                     <div class="card mb-4 rounded-3 shadow-sm border-default">
                         <div class="card-header py-3 bg-default border-default">
-                            <h4 class="my-0 fw-normal"><i class="bi bi-star-fill text-main"></i> Arreglos con Acrílico</h4>
+                            <h4 class="my-0 fw-normal"><i class="bi bi-star-fill text-main"></i> Arreglos con Acrílico
+                            </h4>
                         </div>
                         <div class="card-body">
                             <ul class="list-unstyled mt-3 mb-4">
@@ -127,14 +150,81 @@
                             <h4 class="my-0 fw-normal"><i class="bi bi-star-fill text-main"></i> Otros Arreglos</h4>
                         </div>
                         <div class="card-body">
-                            <p>Tratamiento fortalecedor para uñas: <small class="text-muted fw-light">$ 50.00</small></p>
+                            <p>Tratamiento fortalecedor para uñas: <small class="text-muted fw-light">$ 50.00</small>
+                            </p>
                             <p>Uña caída: <small class="text-muted fw-light">$ 100.00</small></p>
                             <p>Retiro de uñas: <small class="text-muted fw-light">$ 100.00</small></p>
                             <p>Decoración con resina: <small class="text-muted fw-light">$ 100.00</small> (2 uñas)</p>
                             <p>Piedras: <small class="text-muted fw-light">$ 30.00</small> (1 uña)</p>
-                            <p>Efectos: <small class="text-muted fw-light">$ 30.00</small> (1 uña) <small class="text-muted fw-light">$ 100.00</small> en todas.</p>
+                            <p>Efectos: <small class="text-muted fw-light">$ 30.00</small> (1 uña) <small
+                                    class="text-muted fw-light">$ 100.00</small> en todas.</p>
                             <p>Encapsulado: <small class="text-muted fw-light">$ 100.00</small> (2 uñas)</p>
                             <p>Dibujos en las uñas: <small class="text-muted fw-light">$ 50.00</small> (2 uñas)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="pedicura" class="price-section row justify-content-center align-items-center mt-2 mb-2">
+                <div class="col-xs-12">
+                    <h2 class="text-bold"><a name="" id="" class="btn btn-default" onclick="ShowPrice('price')"
+                            role="button"><i class="btn-back text-main text-x-large"></i></a> Pedicura</h2>
+                </div>
+                <div class="col-xs-12">
+                    <p>Ofrecemos varios servicios de Pedicura, con diversos planes en correspondencia a los servicios
+                        ofrecidos.</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+                    <div class="card mb-4 rounded-3 shadow-sm border-default">
+                        <div class="card-header py-3 bg-default border-default">
+                            <h4 class="my-0 fw-normal"><i class="bi bi-star-fill text-main"></i> Plan Básico</h4>
+                        </div>
+                        <div class="card-body text-justify">
+                            <p>Tratamiento y cuidado de sus uñas con una limpieza profunda que incluye:</p>
+                            <ul>
+                                <li><small>Deshydratador</small></li>
+                                <li><small>PRYME</small></li>
+                                <li><small>BASE COAT</small></li>
+                                <li><small>Ultra Gloss TOP COAT</small></li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <p><small class="text-muted fw-light float-end">$ 150.00</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+                    <div class="card mb-4 rounded-3 shadow-sm border-default">
+                        <div class="card-header py-3 bg-default border-default">
+                            <h4 class="my-0 fw-normal"><i class="bi bi-star-fill text-main"></i> Plan Medio</h4>
+                        </div>
+                        <div class="card-body text-justify">
+                            <p>Incluye el Plan Básico y:</p>
+                            <ul>
+                                <li><small>Eliminación de Callos y piel muerta con Esfoliante.</small></li>
+                                <li><small>Tratamiento para talones secos y agrietados con Crema hidratante y nutritiva
+                                        con vitaminas y glicerina sin alcohol</small></li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <p><small class="text-muted fw-light float-end">$ 300.00</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 mt-2">
+                    <div class="card mb-4 rounded-3 shadow-sm border-default">
+                        <div class="card-header py-3 bg-default border-default">
+                            <h4 class="my-0 fw-normal"><i class="bi bi-star-fill text-main"></i> LUXE FOOT</h4>
+                        </div>
+                        <div class="card-body text-justify">
+                            <p>Incluye el Plan Medio y:</p>
+                            <ul>
+                                <li><small>Hidromasaje</small></li>
+                                <li><small>Tratamiento para Hongos</small></li>
+                                <li><small>Masaje hidratante con Aceite</small></li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <p><small class="text-muted fw-light float-end">$ 450.00</small></p>
                         </div>
                     </div>
                 </div>
@@ -178,8 +268,7 @@
                             onclick="redirectToWhatsApp()"><i class="bi bi-whatsapp"></i></a>
                         <!-- Telegram -->
                         <a type="button" class="btn btn-floating btn-light btn-lg telegram"
-                            href="https://t.me/luxe_nails2024"
-                            target="_blank"><i class="bi bi-telegram"></i></a>
+                            href="https://t.me/luxe_nails2024" target="_blank"><i class="bi bi-telegram"></i></a>
                     </div>
                 </div>
                 <!--Grid column-->
@@ -197,7 +286,7 @@
                     <ul class="contact-info" style="margin-left: 1.65em;">
                         <li class="mb-3">
                             <a class="btn btn-light" href="https://www.google.com/maps?q=22.9828435,-82.4651958"
-                                target="_blank"><i class="bi bi-geo-alt"></i></a><span class="ms-2">45 201</span>
+                                target="_blank"><i class="bi bi-geo-alt"></i></a><span class="ms-2">45 204</span>
                         </li>
                         <li class="mb-3">
                             <a class="btn btn-light"
