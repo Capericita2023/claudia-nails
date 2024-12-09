@@ -112,9 +112,9 @@ main {
     position: relative;
     color: white;
     padding: 15px;
-    max-height: 500px;
     left: 0; /* Mostrar inicialmente */
     transition: left 0.3s;
+    height: 100%;
     z-index: 1;
     overflow-y: auto; /* Permitir desplazamiento vertical */
     scrollbar-width: thin; /* Para Firefox */
