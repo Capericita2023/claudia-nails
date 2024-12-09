@@ -100,12 +100,6 @@ main {
     display: block;
 }
 
-@media (max-width: 440px) {
-    .gallery-section h3 {
-        margin-top: 15% !important;
-    }
-}
-
 .left-menu {
     width: 200px;
     background: var(--main-color);
@@ -188,5 +182,49 @@ main {
 @media (min-width: 441px) {
     .left-menu {
         left: 0px !important;
+    }
+}
+
+
+@media (max-width: 1366px) {
+    .card {
+        min-height: 385px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .navbar-collapse{
+        flex-basis: 100% !important;
+    }
+
+    .navbar-brand {
+        width: 50%;
+    }
+
+    .navbar-brand img {
+        width: 20% !important;
+    }
+    
+    .card-precio .card-body .card-title {
+        position: relative !important;
+        left: 35%;
+        margin-top: 2%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-info {
+        padding-left: 0%;
+    }
+
+    .card-precio .card-body .card-title {
+        position: relative !important;
+        left: 30%;
+        margin-top: 5%;
+    }
+
+    .carousel-item img {
+        size-adjust: inherit;
+        height: 400px;
     }
 }
