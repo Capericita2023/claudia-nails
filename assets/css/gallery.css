@@ -17,9 +17,8 @@ main {
 .gallery img {
     width: 150px;
     /* Ancho de las imágenes */
-    height: auto;
-    /* Mantiene la proporción */
     height: 150px;
+    /* Mantiene la proporción */
     cursor: pointer;
     /* Cambia el cursor al pasar sobre la imagen */
     border-radius: 5px;
@@ -166,7 +165,7 @@ main {
     background: rgba(0, 0, 0, 0.8); /* Color al pasar el mouse */
 }
 
-@media (max-width: 440px) {
+@media (max-width: 576px) {
     .left-menu {
         left: -200px; /* Ocultar inicialmente */
     }
@@ -177,9 +176,16 @@ main {
         position: relative;
         margin-left: -200px;
     }
+    .gallery-section{
+        margin-top: 50px;
+    }
+    .gallery img{
+        width: 120px;
+        height: 120px;
+    }
 }
 
-@media (min-width: 441px) {
+@media (min-width: 576px) {
     .left-menu {
         left: 0px !important;
     }

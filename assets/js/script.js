@@ -21,7 +21,7 @@ document.querySelectorAll('.left-menu a').forEach(link => {
         e.preventDefault();
         const galleryId = link.getAttribute('data-gallery');
         showGallery(galleryId);
-        if (window.innerWidth <= 440) {
+        if (window.innerWidth <= 576) {
             navbar.style.left = '-200px'; // Ocultar el menú al seleccionar
         }
     });
