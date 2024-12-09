@@ -64,32 +64,6 @@ main {
     max-width: 100%;
     max-height: 100%;
 }
-.info-section {
-    padding: 20px;
-    background-color: #ffffff; /* Fondo blanco para la sección de información */
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-    overflow-y: auto; /* Permitir desplazamiento vertical */
-    scrollbar-width: thin; /* Para Firefox */
-    scrollbar-color: transparent transparent; /* Para Firefox */
-}
-.info-section::-webkit-scrollbar {
-    width: 8px; /* Ancho de la barra de desplazamiento */
-    background: transparent; /* Fondo de la barra de desplazamiento */
-}
-.info-section::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0.5); /* Color de la barra de desplazamiento */
-    border-radius: 4px; /* Bordes redondeados */
-}
-.info-section::-webkit-scrollbar-thumb:hover {
-    background: rgba(0, 0, 0, 0.8); /* Color al pasar el mouse */
-}
-.catalogo-menu-xs{
-    display: none;
-}
-.offcanvas.offcanvas-start{
-    width: auto !important;
-    background-color: var(--main-color);
-}
 .offcanvas-body{
     padding: 0% !important;
 }

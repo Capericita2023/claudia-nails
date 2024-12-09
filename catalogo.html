@@ -12,7 +12,6 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/gallery.css">
-    <link rel="stylesheet" href="assets/css/slide-left-menu.css">
     <link rel="stylesheet" href="assets/module/spinner/spinner.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
@@ -64,123 +63,24 @@
         </nav>
     </header>
     <main>
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
-            aria-labelledby="offcanvasWithBackdropLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title text-white" id="offcanvasWithBackdropLabel">Categorías</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                    aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <div class="sidebar">
-                    <div class="catalogo-menu">
-                        <div class="images">
-                            <!-- Imágenes del carrusel -->
-                            <div class="image-item" onclick="ShowGallery('naturales')" data-bs-dismiss="offcanvas">
-                                <img src="assets/img/catalogo/Uñas naturales con gel semipermanente/8af18e49a257d20e5fb65515a9892f10.jpg"
-                                    alt="Imagen 1">
-                                <div class="image-text">Uñas con gel semipermanente</div>
-                            </div>
-                            <div class="image-item" onclick="ShowGallery('cinta')" data-bs-dismiss="offcanvas">
-                                <img src="assets/img/catalogo/Con cintas/fcfdba8dcfa1c5bd411b1c210ae1a5f9.jpg"
-                                    alt="Imagen 2">
-                                <div class="image-text">Uñas Decoradas con Cinta</div>
-                            </div>
-                            <div class="image-item" onclick="ShowGallery('dibujo')" data-bs-dismiss="offcanvas">
-                                <img src="assets/img/catalogo/Dibujos con gel semipermanente/u21-3.jpg" alt="Imagen 3">
-                                <div class="image-text">Dibujos con gel semipermanente</div>
-                            </div>
-                            <div class="image-item" onclick="ShowGallery('aurora')" data-bs-dismiss="offcanvas">
-                                <img src="assets/img/catalogo/Efecto aurora/inni-producenci-proszki-do-paznokci-allepaznokcie-glamour-effect-glamour-effect_side2.webp"
-                                    alt="Imagen 4">
-                                <div class="image-text">Uñas con Efecto Aurora</div>
-                            </div>
-                            <div class="image-item" onclick="ShowGallery('espejo')" data-bs-dismiss="offcanvas">
-                                <img src="assets/img/catalogo/Efecto espejo/uñas-efecto-espejo-plata.jpg"
-                                    alt="Imagen 5">
-                                <div class="image-text">Uñas con Efecto Espejo</div>
-                            </div>
-                            <div class="image-item" onclick="ShowGallery('marmol')" data-bs-dismiss="offcanvas">
-                                <img src="assets/img/catalogo/Efecto marmol/9261d68bff52fa63f436508eace01a66.jpg"
-                                    alt="Imagen 6">
-                                <div class="image-text">Uñas con Efecto Marmol</div>
-                            </div>
-                            <div class="image-item" onclick="ShowGallery('galaxy')" data-bs-dismiss="offcanvas">
-                                <img src="assets/img/catalogo/galaxy/70811806205759c7ffd923553ee29764.png"
-                                    alt="Imagen 7">
-                                <div class="image-text">Uñas con Efecto Galaxy</div>
-                            </div>
-                            <div class="image-item" onclick="ShowGallery('encapsulada')" data-bs-dismiss="offcanvas">
-                                <img src="assets/img/catalogo/Encapsuladas/maxresdefault.jpg" alt="Imagen 8">
-                                <div class="image-text">Uñas Encapsuladas</div>
-                            </div>
-                            <div class="image-item" onclick="ShowGallery('formas')" data-bs-dismiss="offcanvas">
-                                <img src="assets/img/catalogo/Forma de las uñas/59c8d43a6a14b3dda14b31bcb528cb1d.jpg"
-                                    alt="Imagen 9">
-                                <div class="image-text">Forma de las Uñas</div>
-                            </div>
-                            <div class="image-item" onclick="ShowGallery('3d')" data-bs-dismiss="offcanvas">
-                                <img src="assets/img/catalogo/Gemas 3d/0b00ba146b9ea33c2be8e283298023b6.jpg"
-                                    alt="Imagen 10">
-                                <div class="image-text">Uñas con Gemas 3D</div>
-                            </div>
-                            <div class="image-item" onclick="ShowGallery('mate')" data-bs-dismiss="offcanvas">
-                                <img src="assets/img/catalogo/Mate/unhas-madrinha-casamento-62.jpg" alt="Imagen 11">
-                                <div class="image-text">Uñas con Mate</div>
-                            </div>
-                            <div class="image-item" onclick="ShowGallery('relieve')" data-bs-dismiss="offcanvas">
-                                <img src="assets/img/catalogo/Relieve de flores/OIP.jfif" alt="Imagen 12">
-                                <div class="image-text">Uñas con Relieve de Flores</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="catalogo-menu-xs">
-                        <ul class="nav flex-column">
-                            <li class="nav-item">
-                                <a class="nav-link text-white" onclick="ShowGallery('naturales')" data-bs-dismiss="offcanvas">Uñas con gel semipermanente</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" onclick="ShowGallery('cinta')" data-bs-dismiss="offcanvas">Uñas Decoradas con Cinta</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" onclick="ShowGallery('dibujo')" data-bs-dismiss="offcanvas">Dibujos con gel semipermanente</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" onclick="ShowGallery('aurora')" data-bs-dismiss="offcanvas">Uñas con Efecto Aurora</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" onclick="ShowGallery('espejo')" data-bs-dismiss="offcanvas">Uñas con Efecto Espejo</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" onclick="ShowGallery('marmol')" data-bs-dismiss="offcanvas">Uñas con Efecto Marmol</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" onclick="ShowGallery('galaxy')" data-bs-dismiss="offcanvas">Uñas con Efecto Galaxy</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" onclick="ShowGallery('encapsulada')" data-bs-dismiss="offcanvas">Uñas Encapsuladas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" onclick="ShowGallery('formas')" data-bs-dismiss="offcanvas">Forma de las Uñas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" onclick="ShowGallery('3d')" data-bs-dismiss="offcanvas">Uñas con Gemas 3D</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" onclick="ShowGallery('mate')" data-bs-dismiss="offcanvas">Uñas con Mate</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" onclick="ShowGallery('relieve')" data-bs-dismiss="offcanvas">Uñas con Relieve de Flores</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div class="left-menu" id="left-menu">
+            <h2>Galerías</h2>
+            <hr>
+            <a href="#" data-gallery="naturales">Uñas con gel semipermanente</a>
+            <a href="#" data-gallery="cinta">Uñas Decoradas con Cinta</a>
+            <a href="#" data-gallery="dibujo">Dibujos con gel semipermanente</a>
+            <a href="#" data-gallery="aurora">Efecto Aurora</a>
+            <a href="#" data-gallery="espejo">Efecto Espejo</a>
+            <a href="#" data-gallery="marmol">Efecto Marmol</a>
+            <a href="#" data-gallery="galaxy">Efecto Galaxy</a>
+            <a href="#" data-gallery="encapsulada">Encapsuladas</a>
+            <a href="#" data-gallery="formas">Formas</a>
+            <a href="#" data-gallery="3d">Gemas 3D</a>
+            <a href="#" data-gallery="mate">Mate</a>
+            <a href="#" data-gallery="relieve">Relieve</a>
         </div>
         <div class="info-section">
-            <button class="btn bg-main pfx" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop"><i
-                    class="bi bi-list"></i></button>
+            <button class="menu-button" id="menuButton">&#9776; Menú</button>
             <div id="naturales" class="gallery-section">
                 <h3>Uñas con gel semipermanente</h3>
                 <div class="gallery">
@@ -466,7 +366,9 @@
         </div>
         <!-- Ventana emergente -->
         <div class="modal" id="modal" onclick="closeModal()">
-            <span class="close" onclick="closeModal()">&times;</span>
+            <span class="close" id="close">&times;</span>
+            <span class="prev" id="prev">&#10094;</span>
+            <span class="next" id="next">&#10095;</span>
             <img id="modal-image" src="" alt="Imagen Ampliada">
         </div>
     </main>
@@ -507,8 +409,7 @@
                             onclick="redirectToWhatsApp()"><i class="bi bi-whatsapp"></i></a>
                         <!-- Telegram -->
                         <a type="button" class="btn btn-floating btn-light btn-lg telegram"
-                            href="https://t.me/luxe_nails2024"
-                            target="_blank"><i class="bi bi-telegram"></i></a>
+                            href="https://t.me/luxe_nails2024" target="_blank"><i class="bi bi-telegram"></i></a>
                     </div>
                 </div>
                 <!--Grid column-->
